@@ -1,3 +1,4 @@
+
 {
   "name": "joshua-portfolio",
   "version": "0.0.0",
@@ -19,14 +20,13 @@
     "@angular/router": "^19.0.0",
     "@google/genai": "^0.1.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.0.0",
     "@angular/cli": "^19.0.0",
     "@angular/compiler-cli": "^19.0.0",
     "@types/node": "^18.18.0",
-    "typescript": "~5.2.2"
+    "typescript": "~5.6.2"
   }
 }

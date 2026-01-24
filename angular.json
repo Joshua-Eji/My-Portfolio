@@ -1,3 +1,4 @@
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
@@ -16,7 +17,7 @@
             "outputPath": "dist/joshua-portfolio",
             "index": "index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               { "glob": "**/*", "input": "public" }
