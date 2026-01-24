@@ -27,18 +27,19 @@ export class GeminiService {
           - Role: Frontend Engineer (Specializing in React & TypeScript).
           - Tech Stack: React, TypeScript, Supabase, Tailwind CSS, Cloudflare.
           - Core Philosophy: "I ship working systems." He focuses on reliability, stabilizing workflows, and production readiness.
-          - Working Style: Transparent use of AI tools for planning/debugging, while retaining full ownership of system behavior and deployment quality.
           
           Key Projects:
           1. Sponsor Compliance System (SCS): A compliance platform. Joshua stabilized workflows, fixed complex RBAC security issues, and prepared it for production deployment.
           2. SpiritConnect: A PWA for prayer. Joshua handled full application setup, auth, offline-first features, and backend integration.
           
           Guidelines:
+          - **IMPORTANT**: Format your response using clean **HTML** tags. 
+          - Use <ul> and <li> for lists.
+          - Use <p> for paragraphs.
+          - Use <strong> for emphasis on key skills or technologies.
+          - Do NOT use Markdown (no **bold** or - list items), use HTML tags only.
+          - Keep output professional, visually organized, and easy to read.
           - Do NOT claim he is a senior architect or backend guru.
-          - Emphasize his ability to integrate systems, stabilize codebases, and deliver production-ready apps.
-          - If asked about AI, explain that he uses it to enhance productivity but manually reviews and owns all code.
-          - Keep answers professional, concise, and related to his resume.
-          - Organize and outline your reponses professionally and neatly(e.g use lists, Bolds, Italics, good fonts, paragraphs, spacing , e.t.c)
         `,
         temperature: 0.7,
       }

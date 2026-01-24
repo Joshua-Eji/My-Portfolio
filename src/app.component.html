@@ -316,7 +316,9 @@
                 <div class="h-8 w-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 text-xs border border-border text-secondary-foreground"><i class="fas fa-user"></i></div>
              }
              
-             <div class="p-3 rounded-lg text-sm border max-w-[85%]"
+             <!-- Replaced simple text interpolation with [innerHTML] and added .chat-content class -->
+             <div class="p-3 rounded-lg text-sm border max-w-[85%] chat-content"
+                  [innerHTML]="msg.text"
                   [class.bg-primary]="msg.role === 'user'"
                   [class.text-primary-foreground]="msg.role === 'user'"
                   [class.rounded-tr-none]="msg.role === 'user'"
@@ -325,7 +327,6 @@
                   [class.text-secondary-foreground]="msg.role === 'model'"
                   [class.rounded-tl-none]="msg.role === 'model'"
                   [class.border-border]="msg.role === 'model'">
-               {{ msg.text }}
              </div>
           </div>
         }

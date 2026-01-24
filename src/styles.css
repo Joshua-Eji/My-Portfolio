@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .chat-content ul {
+    @apply list-disc ml-5 mb-2 mt-1 space-y-1;
+  }
+  
+  .chat-content li {
+    @apply pl-1;
+  }
+  
+  .chat-content p {
+    @apply mb-3 last:mb-0 leading-relaxed;
+  }
+  
+  .chat-content strong {
+    @apply font-bold opacity-90;
+  }
+}
