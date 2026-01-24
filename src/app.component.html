@@ -4,9 +4,26 @@
   <!-- Navigation -->
   <nav class="fixed top-0 w-full z-50 glass">
     <div class="container mx-auto px-6 h-16 flex items-center justify-between">
-      <div class="font-mono text-xl font-bold tracking-tighter text-primary">
-        <span class="text-white">Joshua</span><span class="text-primary">.dev</span>
+      <!-- Logo Section -->
+      <div class="flex items-center gap-3 cursor-pointer" (click)="scrollTo('about')">
+        <!-- SVG Logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-8 w-8 text-primary animate-pulse-slow">
+          <defs>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="2" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+          </defs>
+          <path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12 6 v12 M7 12 h10" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.5" />
+          <rect x="10.5" y="10.5" width="3" height="3" fill="currentColor" />
+        </svg>
+        
+        <div class="font-mono text-xl font-bold tracking-tighter text-primary">
+          <span class="text-white">Joshua</span><span class="text-primary">.dev</span>
+        </div>
       </div>
+
       <!-- Desktop Navigation -->
       <div class="hidden md:flex space-x-8 text-sm font-medium text-muted-foreground">
         <button (click)="scrollTo('about')" class="hover:text-primary transition-colors focus:outline-none">About</button>
@@ -35,15 +52,16 @@
       </h1>
       
       <p class="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 100ms;">
-        I specialize in building reliable, component-based UIs with React and TypeScript. I take full ownership of my code, from secure data modeling with Supabase to pixel-perfect production deployment.
+        I build reliable, component-based user interfaces using React and TypeScript.
+        My work focuses on delivering production-ready systems, integrating secure backends with Supabase, and shipping responsive, user-centered applications.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up mt-12" style="animation-delay: 200ms;">
         <button (click)="scrollTo('projects')" class="h-11 px-8 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-all shadow-[0_0_20px_-5px_hsl(var(--primary))]">
           View Projects
         </button>
-        <button (click)="toggleChat()" class="h-11 px-8 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground font-medium transition-colors">
-          Ask my AI Assistant
+        <button (click)="scrollTo('contact')" class="h-11 px-8 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground font-medium transition-colors">
+          Contact Me
         </button>
       </div>
     </div>
@@ -121,14 +139,14 @@
   <section id="contact" class="py-20 border-t border-border">
     <div class="container mx-auto px-6 text-center max-w-2xl">
       <h2 class="font-mono text-2xl font-bold mb-6">
-        <span class="text-primary">03.</span> What's Next?
+        <span class="text-primary">03.</span> Let's Work Together
       </h2>
-      <h3 class="text-4xl font-bold mb-6">Let's Work Together</h3>
-      <p class="text-muted-foreground mb-8">
-        I'm currently looking for new opportunities. Whether you have a question about my work with React, Supabase, or my AI-assisted workflow, my inbox is always open!
+      
+      <p class="text-muted-foreground mb-8 text-lg">
+        I’m open to new opportunities and collaborations. If you’re interested in my work with React, Supabase, or modern web systems, feel free to reach out.
       </p>
       
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
         <a href="mailto:joshuaejiobih@gmail.com" class="inline-flex h-12 items-center justify-center rounded-md border border-primary bg-transparent px-8 text-sm font-medium text-primary shadow-sm hover:bg-primary hover:text-white transition-all w-full sm:w-auto">
           <i class="fas fa-envelope mr-2"></i> Say Hello
         </a>
@@ -136,10 +154,10 @@
           <i class="fab fa-linkedin mr-2"></i> LinkedIn
         </a>
       </div>
-      
-      <div class="mt-20 text-sm text-muted-foreground">
-        <p>Built with Angular 20, Tailwind & Gemini AI</p>
-        <p class="font-mono mt-2 text-xs opacity-50">System Status: ALL SYSTEMS OPERATIONAL</p>
+
+      <div class="text-sm text-muted-foreground space-y-2">
+         <p class="opacity-80">I use AI tools to assist with planning, iteration, and debugging, while maintaining responsibility for system behavior and deployment quality.</p>
+         <p class="font-mono text-xs opacity-50 pt-2 border-t border-border/50 inline-block">Built with modern web tools and AI-assisted workflows.</p>
       </div>
     </div>
   </section>
@@ -214,12 +232,6 @@
                      {{ selectedProject()!.deployment.status }}
                   </span>
                </div>
-               @if(selectedProject()!.deployment.demoAccess) {
-                 <div class="md:col-span-2 border-t border-border/50 pt-3 mt-1">
-                    <h4 class="text-xs font-mono font-bold text-muted-foreground uppercase mb-1">Demo Access</h4>
-                    <p class="text-foreground/80 text-sm">{{ selectedProject()!.deployment.demoAccess }}</p>
-                 </div>
-               }
             </div>
 
             <div>

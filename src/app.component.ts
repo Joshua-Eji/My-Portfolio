@@ -12,7 +12,6 @@ interface ProjectDeployment {
   url?: string;           // The actual clickable link (e.g., https://app...)
   displayText: string;    // What to show (e.g., app.spiritconnects.org)
   status: string;         // e.g., "Production-ready / Active deployment"
-  demoAccess?: string;    // Optional note (e.g., "Available on request")
 }
 
 interface Project {
@@ -71,40 +70,38 @@ export class AppComponent {
   projects = signal<Project[]>([
     {
       title: 'Sponsor Compliance System',
-      role: 'Full-Stack Engineer (Stabilization & Security)',
-      description: 'A compliance management platform for UK Home Office Licensed Sponsors. I stabilized core workflows, fixed complex RBAC security issues, and prepared the system for production deployment.',
+      role: 'Frontend Engineer',
+      description: 'A compliance management platform for UK Home Office Licensed Sponsors. I worked on stabilizing core workflows, resolving role-based access control issues, and preparing the system for production deployment.',
       responsibilities: [
-        'Audited and corrected role-based access control across admin and user roles',
-        'Fixed authentication issues including MFA flow and secure link expiry',
-        'Implemented and reviewed secure document upload workflows',
-        'Improved audit and activity logging for compliance visibility',
-        'Migrated backend environments and validated data integrity'
+        'Stabilized core workflows for compliance management',
+        'Resolved complex role-based access control (RBAC) security issues',
+        'Managed production deployment preparation and data integrity',
+        'Implemented secure document handling workflows'
       ],
       outcome: 'System stabilized, security gaps resolved, and platform prepared for controlled production deployment.',
-      tags: ['React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Cloudflare', 'Resend', 'Role-Based Access'],
+      tags: ['React', 'TypeScript', 'Supabase', 'Tailwind', 'Cloudflare'],
       // Live screenshot of the sponsors portal
       image: 'https://s0.wp.com/mshots/v1/https%3A%2F%2Fsponsors.mgvprojects.co.uk?w=800&h=600',
       deployment: {
-        displayText: 'Production environment (restricted access)',
-        status: 'Live System (Restricted)',
-        demoAccess: 'Available on request'
+        url: 'https://sponsors.mgvprojects.co.uk',
+        displayText: 'sponsors.mgvprojects.co.uk',
+        status: 'Production-ready / Active deployment',
       },
       repoUrl: 'https://github.com/Joshua-Ejiobih/sponsor-guard-scs.git',
       aiAssisted: true
     },
     {
       title: 'SpiritConnect',
-      role: 'Full-Stack Engineer',
-      description: 'A Progressive Web Application (PWA) for guided prayer and journaling. I managed the full lifecycle including offline-first features, authentication, and backend data modeling.',
+      role: 'Frontend Engineer',
+      description: 'A Progressive Web Application (PWA) for guided prayer and journaling. I handled full application setup including authentication, offline-first behavior, backend integration, and deployment readiness.',
       responsibilities: [
-        'Implemented core application flows for prayer guidelines and journaling',
-        'Integrated authentication and user profile management',
-        'Modeled application data and managed Supabase backend',
-        'Configured hosting, DNS, and deployment via Cloudflare',
-        'Delivered offline-friendly PWA capabilities'
+        'Implemented core application flows and offline-first PWA features',
+        'Integrated authentication and managed user sessions',
+        'Designed and implemented backend data models with Supabase',
+        'Managed cloud infrastructure and deployment via Cloudflare'
       ],
-      outcome: 'A functional, production-ready PWA delivered with end-to-end ownership across frontend, backend, and infrastructure.',
-      tags: ['React', 'PWA', 'Supabase', 'Cloudflare', 'Google Analytics', 'Speechmatics', 'Offline-First'],
+      outcome: 'A functional, production-ready PWA delivered with end-to-end ownership across frontend and backend integration.',
+      tags: ['React', 'PWA', 'Supabase', 'Firebase', 'Tailwind'],
       // Live screenshot of the SpiritConnect app
       image: 'https://s0.wp.com/mshots/v1/https%3A%2F%2Fapp.spiritconnects.org?w=800&h=600',
       deployment: {
