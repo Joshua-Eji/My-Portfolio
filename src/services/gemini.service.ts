@@ -1,4 +1,3 @@
-
 import { Injectable, signal } from '@angular/core';
 import { GoogleGenAI, GenerateContentResponse, Chat } from '@google/genai';
 
@@ -12,7 +11,7 @@ export class GeminiService {
   public isLoading = signal<boolean>(false);
 
   constructor() {
-    this.ai = new GoogleGenAI({ apiKey: process.env['API_KEY'] });
+    this.ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     this.initChat();
   }
 
