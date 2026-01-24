@@ -1,5 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { GoogleGenAI, GenerateContentResponse, Chat } from '@google/genai';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,8 @@ export class GeminiService {
   public isLoading = signal<boolean>(false);
 
   constructor() {
-    this.ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    // Uses the environment variable instead of process.env to prevent browser crashes
+    this.ai = new GoogleGenAI({ apiKey: environment.apiKey });
     this.initChat();
   }
 
