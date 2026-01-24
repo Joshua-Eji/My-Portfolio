@@ -1,6 +1,5 @@
-
 import { Component, inject, signal, ElementRef, ViewChild, ChangeDetectionStrategy, effect } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { GeminiService } from './services/gemini.service';
 
 interface TechItem {
@@ -34,8 +33,7 @@ interface ChatMessage {
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrls: [],
   changeDetection: ChangeDetectionStrategy.OnPush

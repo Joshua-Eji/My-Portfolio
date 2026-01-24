@@ -12,7 +12,7 @@ export class GeminiService {
   public isLoading = signal<boolean>(false);
 
   constructor() {
-    this.ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    this.ai = new GoogleGenAI({ apiKey: process.env['API_KEY'] });
     this.initChat();
   }
 
