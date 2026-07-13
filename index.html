@@ -2,10 +2,26 @@
 <html lang="en" class="dark">
 <head>
   <meta charset="utf-8">
-  <title>Joshua Ejiobih | Frontend Engineer</title>
-  <base href="./">
+  <title>Joshua Ejiobih — Software Engineer</title>
+  <meta name="description" content="Software engineer building reliable, maintainable software across AI-powered products, frontend systems, and developer tooling.">
+  <meta property="og:title" content="Joshua Ejiobih — Software Engineer">
+  <meta property="og:description" content="Software engineer building reliable, maintainable software across AI-powered products, frontend systems, and developer tooling.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joshua Ejiobih",
+      "jobTitle": "Software Engineer",
+      "url": "https://joshua-ejiobih.com"
+    }
+  </script>
+
   <!-- Custom Logo Favicon (Hexagon J) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b5cf6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='12 2 21 7 21 17 12 22 3 17 3 7 12 2' fill='%230f0f11' /%3E%3Ctext x='12' y='17' font-family='monospace' font-size='14' font-weight='bold' text-anchor='middle' fill='%238b5cf6' stroke='none'%3EJ%3C/text%3E%3C/svg%3E">
 
@@ -26,44 +42,29 @@
             mono: ['JetBrains Mono', 'monospace'],
           },
           colors: {
-            background: 'hsl(var(--background))',
-            foreground: 'hsl(var(--foreground))',
-            primary: {
-              DEFAULT: 'hsl(var(--primary))',
-              foreground: 'hsl(var(--primary-foreground))',
+            bg: {
+              primary: 'var(--bg-primary)',
+              card: 'var(--bg-card)',
+              'card-hover': 'var(--bg-card-hover)',
             },
-            secondary: {
-              DEFAULT: 'hsl(var(--secondary))',
-              foreground: 'hsl(var(--secondary-foreground))',
+            accent: {
+              violet: 'var(--accent-violet)',
+              'violet-soft': 'var(--accent-violet-soft)',
+              'violet-muted': 'var(--accent-violet-muted)',
             },
-            muted: {
-              DEFAULT: 'hsl(var(--muted))',
-              foreground: 'hsl(var(--muted-foreground))',
+            text: {
+              primary: 'var(--text-primary)',
+              secondary: 'var(--text-secondary)',
+              muted: 'var(--text-muted)',
             },
-            card: {
-              DEFAULT: 'hsl(var(--card))',
-              foreground: 'hsl(var(--card-foreground))',
+            border: {
+              subtle: 'var(--border-subtle)',
+              card: 'var(--border-card)',
             },
-            border: 'hsl(var(--border))',
-          },
-          animation: {
-            'blink': 'blink 1s step-end infinite',
-            'fade-in': 'fadeIn 0.5s ease-out forwards',
-            'slide-up': 'slideUp 0.5s ease-out forwards',
-            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-          },
-          keyframes: {
-            blink: {
-              '0%, 100%': { opacity: '1' },
-              '50%': { opacity: '0' },
-            },
-            fadeIn: {
-              '0%': { opacity: '0' },
-              '100%': { opacity: '1' },
-            },
-            slideUp: {
-              '0%': { transform: 'translateY(20px)', opacity: '0' },
-              '100%': { transform: 'translateY(0)', opacity: '1' },
+            status: {
+              success: 'var(--success)',
+              warning: 'var(--warning)',
+              error: 'var(--error)',
             }
           }
         }
@@ -75,35 +76,45 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
     
     :root {
-      --background: 240 10% 3.9%;
-      --foreground: 0 0% 98%;
-      --card: 240 10% 3.9%;
-      --card-foreground: 0 0% 98%;
-      --primary: 263 70% 50%; /* Violet-600 */
-      --primary-foreground: 210 40% 98%;
-      --secondary: 240 3.7% 15.9%;
-      --secondary-foreground: 0 0% 98%;
-      --muted: 240 3.7% 15.9%;
-      --muted-foreground: 240 5% 64.9%;
-      --border: 240 3.7% 15.9%;
+      --bg-primary: #09090B;
+      --bg-card: #111113;
+      --bg-card-hover: #161618;
+      --accent-violet: #7C3AED;
+      --accent-violet-soft: #8B5CF6;
+      --accent-violet-muted: #6D28D9;
+      --text-primary: #FAFAFA;
+      --text-secondary: #A1A1AA;
+      --text-muted: #71717A;
+      --border-subtle: #27272A;
+      --border-card: #1F1F23;
+      --success: #16A34A;
+      --warning: #D97706;
+      --error: #DC2626;
     }
 
     body {
-      background-color: hsl(var(--background));
-      color: hsl(var(--foreground));
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
       font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
     }
 
     ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: hsl(var(--background)); }
-    ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: hsl(var(--primary)); }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--border-subtle); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--border-card); }
 
     .glass {
-      background: rgba(10, 10, 10, 0.7);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid hsl(var(--border));
+      background: rgba(9, 9, 11, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    
+    /* Global scroll margin for anchor links due to fixed header */
+    html {
+      scroll-padding-top: 5rem;
+      scroll-behavior: smooth;
     }
   </style>
 
@@ -119,9 +130,9 @@
     "@angular/compiler": "https://esm.sh/@angular/compiler@^21.1.1?external=rxjs",
     "@angular/platform-browser": "https://esm.sh/@angular/platform-browser@^21.1.1?external=rxjs",
     "@angular/core": "https://esm.sh/@angular/core@^21.1.1?external=rxjs",
+    "@angular/router": "https://esm.sh/@angular/router@^21.1.1?external=rxjs",
     "@google/genai": "https://esm.sh/@google/genai@^1.38.0?external=rxjs",
-    "@angular/common": "https://esm.sh/@angular/common@^21.1.1?external=rxjs",
-    "zone.js": "https://esm.sh/zone.js@0.15.0"
+    "@angular/common": "https://esm.sh/@angular/common@^21.1.1?external=rxjs"
   }
 }
 </script>
