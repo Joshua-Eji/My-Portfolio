@@ -29,11 +29,11 @@ import { Component } from '@angular/core';
           </div>
           joshuaejiobih&#64;gmail.com
         </a>
-        <a href="https://github.com/Joshua-Ejiobih" target="_blank" class="inline-flex items-center gap-4 text-xl text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
+        <a href="https://github.com/Joshua-Eji" target="_blank" class="inline-flex items-center gap-4 text-xl text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
           <div class="w-12 h-12 flex items-center justify-center rounded-full bg-bg-primary border border-border-subtle text-accent-violet-soft group-hover:bg-accent-violet group-hover:text-text-primary transition-colors">
             <i class="fab fa-github"></i>
           </div>
-          github.com/Joshua-Ejiobih
+          github.com/Joshua-Eji
         </a>
         <a href="https://linkedin.com/in/joshua-ejiobih-3993a26a" target="_blank" class="inline-flex items-center gap-4 text-xl text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
           <div class="w-12 h-12 flex items-center justify-center rounded-full bg-bg-primary border border-border-subtle text-accent-violet-soft group-hover:bg-accent-violet group-hover:text-text-primary transition-colors">

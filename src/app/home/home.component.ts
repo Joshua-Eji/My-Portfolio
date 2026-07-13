@@ -35,7 +35,7 @@ import { RouterLink } from '@angular/router';
           <a routerLink="/" fragment="resume" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-accent-violet text-text-primary font-medium hover:bg-accent-violet-soft transition-colors shadow-lg hover:shadow-accent-violet/20">
             Resume
           </a>
-          <a href="https://github.com/Joshua-Ejiobih" target="_blank" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-transparent border border-border-subtle text-text-primary font-medium hover:bg-bg-card transition-colors">
+          <a href="https://github.com/Joshua-Eji" target="_blank" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-transparent border border-border-subtle text-text-primary font-medium hover:bg-bg-card transition-colors">
             GitHub
             <i class="fas fa-external-link-alt ml-2 text-sm"></i>
           </a>
@@ -473,8 +473,8 @@ import { RouterLink } from '@angular/router';
           <a href="mailto:joshuaejiobih@gmail.com" class="inline-flex items-center gap-3 text-lg text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
             <i class="fas fa-envelope"></i> joshuaejiobih&#64;gmail.com
           </a>
-          <a href="https://github.com/Joshua-Ejiobih" target="_blank" class="inline-flex items-center gap-3 text-lg text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
-            <i class="fab fa-github"></i> github.com/Joshua-Ejiobih
+          <a href="https://github.com/Joshua-Eji" target="_blank" class="inline-flex items-center gap-3 text-lg text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
+            <i class="fab fa-github"></i> github.com/Joshua-Eji
           </a>
           <a href="https://linkedin.com/in/joshua-ejiobih-3993a26a" target="_blank" class="inline-flex items-center gap-3 text-lg text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
             <i class="fab fa-linkedin"></i> linkedin.com/in/joshua-ejiobih
