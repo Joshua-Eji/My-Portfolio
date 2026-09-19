@@ -51,10 +51,10 @@ import { RouterLink } from '@angular/router';
             <div class="mb-6">
               <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
                 <span class="text-lg font-bold text-gray-900">Frontend Engineer (Intern)</span>
-                <span class="text-sm text-gray-500 font-medium">April 2025 &ndash; June 2026</span>
+                <span class="text-sm text-gray-500 font-medium">April 2025 to June 2026</span>
               </div>
               <div class="text-gray-600 font-medium italic mb-3">Bincom Dev Center &middot; Lagos, Nigeria</div>
-              <p class="text-gray-700 mb-3">Contributed to four client software products &mdash; FoodRisk AI, Sponsor Compliance System, Spirit Connect and CQC Companion &mdash; across healthcare, UK immigration compliance and community engagement, building two from the ground up within a cross-functional team.</p>
+              <p class="text-gray-700 mb-3">Contributed to four client software products (FoodRisk AI, Sponsor Compliance System, Spirit Connect and CQC Companion) across healthcare, UK immigration compliance and community engagement, building two from the ground up within a cross-functional team.</p>
               <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
                 <li>Built and maintained major frontend features in React and TypeScript.</li>
                 <li>Integrated Gemini-powered AI functionality through Supabase Edge Functions, including AI-assisted image analysis and ingredient evaluation.</li>
@@ -69,11 +69,11 @@ import { RouterLink } from '@angular/router';
             <div class="mb-6">
               <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
                 <span class="text-lg font-bold text-gray-900">Facilitator</span>
-                <span class="text-sm text-gray-500 font-medium">August 2025 &ndash; May 2026</span>
+                <span class="text-sm text-gray-500 font-medium">August 2025 to May 2026</span>
               </div>
               <div class="text-gray-600 font-medium italic mb-3">Bincom Academy &middot; Lagos, Nigeria</div>
               <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
-                <li>Taught web development to more than one hundred learners across multiple cohorts &mdash; JavaScript, TypeScript, React, Git workflows and deployment fundamentals.</li>
+                <li>Taught web development to more than one hundred learners across multiple cohorts: JavaScript, TypeScript, React, Git workflows and deployment fundamentals.</li>
                 <li>Built the instructional material and mentored beginners individually through project work.</li>
               </ul>
             </div>
@@ -81,11 +81,11 @@ import { RouterLink } from '@angular/router';
             <div class="mb-2">
               <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
                 <span class="text-lg font-bold text-gray-900">Industrial Trainee</span>
-                <span class="text-sm text-gray-500 font-medium">May 2023 &ndash; August 2023</span>
+                <span class="text-sm text-gray-500 font-medium">May 2023 to August 2023</span>
               </div>
               <div class="text-gray-600 font-medium italic mb-3">Opex Academy</div>
               <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
-                <li>Built mobile applications in Flutter and Dart within a structured team development environment &mdash; the starting point of a path into frontend and production engineering.</li>
+                <li>Built mobile applications in Flutter and Dart within a structured team development environment, the starting point of a path into frontend and production engineering.</li>
               </ul>
             </div>
           </section>
@@ -99,7 +99,7 @@ import { RouterLink } from '@angular/router';
               <div class="text-gray-600 italic mb-2">Built from scratch. An AI-powered platform that helps people catch food risks and allergens before they eat, not after.</div>
               <ul class="list-disc pl-5 space-y-1.5 text-gray-700 mb-2">
                 <li>Built the full application frontend from scratch including all major feature modules.</li>
-                <li>Replaced a failing OCR pipeline with Gemini-powered image understanding once traditional OCR proved too unreliable for real food labels &mdash; questioning the approach rather than optimising the wrong tool.</li>
+                <li>Replaced a failing OCR pipeline with Gemini-powered image understanding once traditional OCR proved too unreliable for real food labels, questioning the approach rather than optimising the wrong tool.</li>
                 <li>Built a key rotation system that kept AI features running through quota limits, switching between Gemini keys automatically instead of dropping requests.</li>
                 <li>Built the Admin and Super Admin dashboards from the ground up, including audit logs and error tracking that gave the team visibility into failures they could not see before.</li>
               </ul>
@@ -120,7 +120,7 @@ import { RouterLink } from '@angular/router';
 
             <div class="mb-4">
               <div class="font-bold text-gray-900 text-lg">Spirit Connect</div>
-              <div class="text-gray-600 italic mb-2">Built from scratch. A guided prayer and journaling platform where the hardest problem was not the backend &mdash; it was getting an automated audio session to behave the same way on an iPhone as it did on a desktop browser.</div>
+              <div class="text-gray-600 italic mb-2">Built from scratch. A guided prayer and journaling platform where the hardest problem was not the backend. It was getting an automated audio session to behave the same way on an iPhone as it did on a desktop browser.</div>
               <ul class="list-disc pl-5 space-y-1.5 text-gray-700 mb-2">
                 <li>Built automated guided prayer sessions with synchronized text, speech synthesis and background audio.</li>
                 <li>Resolved cross-device audio inconsistencies through repeated testing and iteration with the client, standardizing timing and playback behaviour across browsers and mobile operating systems.</li>
@@ -136,7 +136,7 @@ import { RouterLink } from '@angular/router';
             <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
                 <li>Contributed to four client software products across healthcare, compliance and digital communities, building two of them from scratch.</li>
                 <li>Facilitated technical learning for 100+ students across multiple development cohorts at Bincom Academy.</li>
-                <li>Introduced engineering improvements &mdash; centralized logging, AI key rotation, a secure migration out of a closed platform &mdash; that made the systems easier to maintain and to debug.</li>
+                <li>Introduced engineering improvements (centralized logging, AI key rotation, a secure migration out of a closed platform) that made the systems easier to maintain and to debug.</li>
                 <li>Collaborated across engineering, QA, product, design and documentation teams on concurrent projects.</li>
                 <li>Authored extensive technical documentation supporting production software delivery and long-term maintainability.</li>
             </ul>
@@ -174,7 +174,7 @@ import { RouterLink } from '@angular/router';
               <span class="text-sm text-gray-500 font-medium">March 2024</span>
             </div>
             <div class="text-gray-700 font-medium mb-1">University of Nigeria, Nsukka</div>
-            <div class="text-gray-600 italic">Research: Receipt Genius &mdash; a receipt generation application for SMEs, built in Flutter</div>
+            <div class="text-gray-600 italic">Research: Receipt Genius, a receipt generation application for SMEs, built in Flutter</div>
           </section>
 
           <!-- Certifications & Languages -->
@@ -182,16 +182,16 @@ import { RouterLink } from '@angular/router';
             <section>
               <h2 class="text-lg font-bold text-gray-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-4">Certifications</h2>
               <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
-                <li><strong>Anthropic</strong> AI Fluency: Framework and Foundations &mdash; 2026</li>
-                <li><strong>Anthropic</strong> Claude 101 &mdash; 2026</li>
-                <li><strong>Cisco Networking Academy</strong> Introduction to Cybersecurity &mdash; 2023</li>
-                <li><strong>Opex Academy</strong> Mobile Application Development &mdash; 2023</li>
+                <li><strong>Anthropic</strong> AI Fluency: Framework and Foundations, 2026</li>
+                <li><strong>Anthropic</strong> Claude 101, 2026</li>
+                <li><strong>Cisco Networking Academy</strong> Introduction to Cybersecurity, 2023</li>
+                <li><strong>Opex Academy</strong> Mobile Application Development, 2023</li>
               </ul>
             </section>
 
             <section>
               <h2 class="text-lg font-bold text-gray-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-4">Languages</h2>
-              <p class="text-gray-700"><strong>English</strong> &mdash; Fluent</p>
+              <p class="text-gray-700"><strong>English</strong>: Fluent</p>
             </section>
           </div>
 
