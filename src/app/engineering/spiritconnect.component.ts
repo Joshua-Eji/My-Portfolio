@@ -31,7 +31,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
     <section>
       <h2>The Problem</h2>
       <p>The platform required a highly automated prayer experience capable of delivering synchronized voice narration, background audio, and structured prayer content across desktop browsers, mobile browsers, and varying network conditions.</p>
-      <p>Unlike most web applications where timing is a concern of user experience, here timing consistency was part of the product itself. A prayer session that stuttered, skipped, or stopped unexpectedly wasn't just a bug — it was a broken experience at a meaningful personal moment.</p>
+      <p>Unlike most web applications where timing is a concern of user experience, here timing consistency was part of the product itself. A prayer session that stuttered, skipped, or stopped unexpectedly wasn't just a bug. It was a broken experience at a meaningful personal moment.</p>
     </section>
 
     <section>
@@ -69,7 +69,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
           icon="fas fa-magic"
           tag="Product"
         >
-          Manual prayer sessions would have required users to navigate between steps independently, breaking the continuity that makes guided prayer meaningful. Automating the session flow — advancing through steps, triggering audio at the right moments, handling pauses and transitions — allowed the application to guide users through an experience rather than simply presenting content for them to navigate.
+          Manual prayer sessions would have required users to navigate between steps independently, breaking the continuity that makes guided prayer meaningful. Automating the session flow, advancing through steps, triggering audio at the right moments, handling pauses and transitions, allowed the application to guide users through an experience rather than simply presenting content for them to navigate.
         </app-decision-card>
 
         <app-decision-card
@@ -86,7 +86,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
       <h2>Biggest Challenge</h2>
       <p>The automated prayer session behaved inconsistently across browsers and mobile devices.</p>
       <p>Audio playback timing varied between browsers. Mobile browsers applied different autoplay restrictions. Background audio and voice narration sometimes fell out of sync. Content provided by the client occasionally contained formatting inconsistencies that disrupted session flow.</p>
-      <p>Rather than applying isolated fixes for each device or browser, I continued refining the session architecture — improving how audio was loaded and triggered, standardizing content preprocessing, and testing across real devices rather than browser developer tools.</p>
+      <p>Rather than applying isolated fixes for each device or browser, I continued refining the session architecture: improving how audio was loaded and triggered, standardizing content preprocessing, and testing across real devices rather than browser developer tools.</p>
       <p>The process required patience and close collaboration with the client to standardize content and validate each iteration. It also reinforced something important: software must be tested where users actually use it, not where developers build it.</p>
     </section>
 
@@ -103,7 +103,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
           Automated sequences that depend on timing need to account for network latency, browser restrictions, and device capabilities.
         </app-lesson-card>
         <app-lesson-card title="Software can carry meaning.">
-          Building a platform designed to help people pray reminded me that software is sometimes more than functional — it can be meaningful.
+          Building a platform designed to help people pray reminded me that software is sometimes more than functional. It can be meaningful.
         </app-lesson-card>
       </div>
     </section>
@@ -111,8 +111,8 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
     <section>
       <h2>Reflection</h2>
       <p>Spirit Connect reminded me that not all software is purely transactional.</p>
-      <p>The experience a user has during a guided prayer session is the product. Technical correctness is necessary but not sufficient — the session has to feel right.</p>
-      <p>That distinction — between software that works and software that works well in the context it was built for — is one I carry into every project since.</p>
+      <p>The experience a user has during a guided prayer session is the product. Technical correctness is necessary but not sufficient. The session has to feel right.</p>
+      <p>That distinction, between software that works and software that works well in the context it was built for, is one I carry into every project since.</p>
     </section>
   </app-case-study-layout>
   `
