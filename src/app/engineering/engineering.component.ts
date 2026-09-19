@@ -28,7 +28,7 @@ import { RouterLink } from '@angular/router';
             <span class="text-xs font-mono text-text-secondary">Production-ready</span>
           </div>
           <h4 class="text-xl font-bold text-text-primary mb-3 group-hover:text-accent-violet-soft transition-colors">FoodRisk AI</h4>
-          <p class="text-text-secondary text-sm leading-relaxed mb-6 flex-1">AI-powered food safety platform helping users identify allergens and understand food ingredients through barcode scanning and AI-assisted analysis.</p>
+          <p class="text-text-secondary text-sm leading-relaxed mb-6 flex-1">An allergen and ingredient analysis platform, built from scratch. Standard OCR could not read real food labels reliably, so I replaced it with Gemini-powered image understanding &mdash; and built key rotation so the AI features survive quota limits.</p>
           <div class="flex flex-wrap gap-2 mt-auto">
             <span class="text-xs font-mono text-text-muted bg-bg-primary px-2 py-1 rounded">React</span>
             <span class="text-xs font-mono text-text-muted bg-bg-primary px-2 py-1 rounded">TypeScript</span>
@@ -52,7 +52,7 @@ import { RouterLink } from '@angular/router';
             <span class="text-xs font-mono text-text-secondary">Production</span>
           </div>
           <h4 class="text-xl font-bold text-text-primary mb-3 group-hover:text-accent-violet-soft transition-colors">Sponsor Compliance System</h4>
-          <p class="text-text-secondary text-sm leading-relaxed mb-6 flex-1">Compliance management platform for UK Home Office Licensed Sponsors. Contributed to frontend architecture, RBAC, database migrations, centralized logging, and a custom production migration workflow.</p>
+          <p class="text-text-secondary text-sm leading-relaxed mb-6 flex-1">A UK Home Office compliance platform whose data was trapped on a managed environment with no database access and no export path. I designed a server-side extraction endpoint locked to Super Administrators and moved 45 tables in dependency order. The platform runs on that data today.</p>
           <div class="flex flex-wrap gap-2 mt-auto">
             <span class="text-xs font-mono text-text-muted bg-bg-primary px-2 py-1 rounded">React</span>
             <span class="text-xs font-mono text-text-muted bg-bg-primary px-2 py-1 rounded">TypeScript</span>
@@ -77,10 +77,10 @@ import { RouterLink } from '@angular/router';
         <div class="p-6 flex-1 flex flex-col">
           <div class="flex items-center gap-2 mb-4">
             <span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
-            <span class="text-xs font-mono text-text-secondary">Production</span>
+            <span class="text-xs font-mono text-text-secondary">Shipped</span>
           </div>
           <h4 class="text-xl font-bold text-text-primary mb-3 group-hover:text-accent-violet-soft transition-colors">Spirit Connect</h4>
-          <p class="text-text-secondary text-sm leading-relaxed mb-6 lg:w-2/3">Progressive web application for guided prayer, spiritual journaling, and community engagement. Built automated prayer sessions with synchronized audio across browsers and devices.</p>
+          <p class="text-text-secondary text-sm leading-relaxed mb-6 lg:w-2/3">A guided prayer and journaling platform, built from scratch. The hard problem was not the backend &mdash; it was getting an automated audio session to behave the same way on an iPhone as it did on a desktop browser.</p>
           <div class="flex flex-wrap gap-2">
             <span class="text-xs font-mono text-text-muted bg-bg-primary px-2 py-1 rounded">React</span>
             <span class="text-xs font-mono text-text-muted bg-bg-primary px-2 py-1 rounded">JavaScript</span>
