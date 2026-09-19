@@ -28,7 +28,7 @@ import { RouterLink } from '@angular/router';
         <a routerLink="/engineering" class="text-text-secondary hover:text-text-primary transition-colors">Engineering</a>
         <a routerLink="/journey" class="text-text-secondary hover:text-text-primary transition-colors">Journey</a>
         <a routerLink="/" fragment="how-i-think" class="text-text-secondary hover:text-text-primary transition-colors">Thinking</a>
-        <a routerLink="/" fragment="resume" class="text-text-secondary hover:text-text-primary transition-colors">Resume</a>
+        <a routerLink="/resume" class="text-text-secondary hover:text-text-primary transition-colors">Resume</a>
         <a routerLink="/contact" class="text-text-secondary hover:text-text-primary transition-colors">Contact</a>
       </nav>
 
@@ -45,7 +45,7 @@ import { RouterLink } from '@angular/router';
         <a routerLink="/engineering" (click)="toggleMobileMenu()" class="text-text-primary font-medium text-lg">Engineering</a>
         <a routerLink="/journey" (click)="toggleMobileMenu()" class="text-text-primary font-medium text-lg">Journey</a>
         <a routerLink="/" fragment="how-i-think" (click)="toggleMobileMenu()" class="text-text-primary font-medium text-lg">Thinking</a>
-        <a routerLink="/" fragment="resume" (click)="toggleMobileMenu()" class="text-text-primary font-medium text-lg">Resume</a>
+        <a routerLink="/resume" (click)="toggleMobileMenu()" class="text-text-primary font-medium text-lg">Resume</a>
         <a routerLink="/contact" (click)="toggleMobileMenu()" class="text-text-primary font-medium text-lg">Contact</a>
       </div>
     }
