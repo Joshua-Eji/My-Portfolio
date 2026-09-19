@@ -476,7 +476,7 @@ import { RouterLink } from '@angular/router';
           <a href="https://github.com/Joshua-Eji" target="_blank" class="inline-flex items-center gap-3 text-lg text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
             <i class="fab fa-github"></i> github.com/Joshua-Eji
           </a>
-          <a href="https://linkedin.com/in/joshua-ejiobih-3993a26a" target="_blank" class="inline-flex items-center gap-3 text-lg text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
+          <a href="https://www.linkedin.com/in/joshua-ejiobih/" target="_blank" class="inline-flex items-center gap-3 text-lg text-text-primary hover:text-accent-violet-soft transition-colors font-medium">
             <i class="fab fa-linkedin"></i> linkedin.com/in/joshua-ejiobih
           </a>
         </div>
