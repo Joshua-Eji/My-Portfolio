@@ -10,25 +10,22 @@ if (!existsSync(envDir)) {
 const targetPath = join(envDir, 'environment.ts');
 const targetPathProd = join(envDir, 'environment.prod.ts');
 
-// Get the API key from the environment variables (Vercel sets this)
-const apiKey = process.env.API_KEY || '';
+// No secrets belong in these files. Anything written here is compiled into the
+// browser bundle and is readable by anyone who opens devtools. The Gemini key
+// lives only in the serverless function at api/chat.mjs, which reads it from
+// process.env at request time and never sends it to the client.
 
-// Content for development environment
 const envFileContent = `export const environment = {
-  production: false,
-  apiKey: '${apiKey}'
+  production: false
 };
 `;
 
-// Content for production environment
 const envFileContentProd = `export const environment = {
-  production: true,
-  apiKey: '${apiKey}'
+  production: true
 };
 `;
 
-// Write the files
 writeFileSync(targetPath, envFileContent);
 writeFileSync(targetPathProd, envFileContentProd);
 
-console.log(`Environment variables generated in ${envDir}`);
+console.log(`Environment files generated in ${envDir}`);
