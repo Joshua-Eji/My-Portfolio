@@ -37,7 +37,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
       <h2>The Problem</h2>
       <p>Many existing food applications stop at presenting raw nutritional information.</p>
       <p>The challenge here was different.</p>
-      <p>The application needed to interpret ingredients, explain potential risks, personalize responses based on individual user allergies, and present that information in a way that remained understandable to everyday users — not just people with technical or nutritional expertise.</p>
+      <p>The application needed to interpret ingredients, explain potential risks, personalize responses based on individual user allergies, and present that information in a way that remained understandable to everyday users, not just people with technical or nutritional expertise.</p>
       <p>It also required an administration platform capable of managing products, users, and AI behaviour while remaining maintainable for ongoing development.</p>
     </section>
 
@@ -96,7 +96,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
           icon="fas fa-terminal"
           tag="Developer Experience"
         >
-          During earlier projects I learned that debugging production systems becomes significantly harder without visibility into user activity and application failures. Rather than immediately adopting an external observability platform — which would have required justification before the product proved its value — I introduced centralized activity logging and developer-focused error logging that provided immediate insight into system behaviour and helped stakeholders understand the long-term value of production observability.
+          During earlier projects I learned that debugging production systems becomes significantly harder without visibility into user activity and application failures. Rather than immediately adopting an external observability platform, which would have required justification before the product proved its value, I introduced centralized activity logging and developer-focused error logging that provided immediate insight into system behaviour and helped stakeholders understand the long-term value of production observability.
         </app-decision-card>
 
         <app-decision-card
@@ -128,7 +128,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
       <h2>Biggest Challenge</h2>
       <p>Integrating AI through Supabase Edge Functions proved significantly more complex than simply calling an external API.</p>
       <p>The project introduced an unfamiliar class of problems: authentication failures, configuration mistakes, quota exhaustion, malformed responses, and intermittent AI service availability. Each failure mode required a different debugging approach, and the combination of a new AI provider, an unfamiliar edge computing environment, and a product timeline created sustained pressure throughout development.</p>
-      <p>Rather than treating each error as an isolated incident, I gradually redesigned the surrounding architecture — improving error handling, strengthening logging, and introducing automated API key rotation. The experience fundamentally changed how I think about integrating AI capabilities into production software.</p>
+      <p>Rather than treating each error as an isolated incident, I gradually redesigned the surrounding architecture: improving error handling, strengthening logging, and introducing automated API key rotation. The experience fundamentally changed how I think about integrating AI capabilities into production software.</p>
     </section>
 
     <section>
@@ -141,13 +141,13 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
           Centralized logging paid for itself within days of implementation through faster debugging.
         </app-lesson-card>
         <app-lesson-card title="Iteration produces better software.">
-          The final architecture looked nothing like the initial implementation — and was better for it.
+          The final architecture looked nothing like the initial implementation, and was better for it.
         </app-lesson-card>
         <app-lesson-card title="Developer experience matters.">
           Tooling that makes debugging easier reduces frustration and improves the quality of decisions made under pressure.
         </app-lesson-card>
         <app-lesson-card title="Reliable software is designed.">
-          Reliability doesn't emerge from careful coding alone — it requires deliberate architectural decisions.
+          Reliability doesn't emerge from careful coding alone. It requires deliberate architectural decisions.
         </app-lesson-card>
         <app-lesson-card title="Question the approach, not just the implementation.">
           Replacing OCR entirely was faster and more effective than optimizing a flawed pipeline.
@@ -159,7 +159,7 @@ import { ResponsibilityTimelineComponent } from '../components/responsibility-ti
       <h2>Reflection</h2>
       <p>FoodRisk AI became the project where I began thinking less like a frontend developer and more like a software engineer.</p>
       <p>It required balancing product requirements, AI limitations, backend integrations, and long-term maintainability rather than simply implementing the interfaces in a design file.</p>
-      <p>Many of the engineering decisions I carry into newer projects — centralized logging, resilient API integration, thoughtful deployment planning — originated here.</p>
+      <p>Many of the engineering decisions I carry into newer projects, including centralized logging, resilient API integration and thoughtful deployment planning, originated here.</p>
     </section>
   </app-case-study-layout>
   `
