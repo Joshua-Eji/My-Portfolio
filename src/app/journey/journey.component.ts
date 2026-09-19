@@ -64,7 +64,7 @@ import { Component } from '@angular/core';
         <div class="absolute -left-[37px] md:-left-[53px] top-1.5 w-3 h-3 rounded-full bg-border-subtle border-4 border-bg-primary"></div>
         <div class="font-mono text-sm text-text-muted mb-2">2023</div>
         <p class="text-lg text-text-primary font-medium mb-1">Receipt Genius</p>
-        <p class="text-text-secondary">Undergraduate research project — receipt generation app for SMEs built with Flutter</p>
+        <p class="text-text-secondary">Undergraduate research project: a receipt generation app for SMEs built with Flutter</p>
       </div>
       
       <div class="relative">
