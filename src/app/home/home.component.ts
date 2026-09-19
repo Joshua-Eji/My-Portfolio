@@ -76,14 +76,14 @@ import { RouterLink } from '@angular/router';
           <p>Within a relatively short period, he moved from learning the fundamentals to delivering production software for international clients.</p>
           <p>That experience reshaped how he viewed software engineering.</p>
           <p>Frameworks change. Problems don't.</p>
-          <p>Today his interests extend beyond frontend into backend engineering, system design, developer tooling, observability, and AI systems — because he believes understanding complete systems leads to better software.</p>
+          <p>Today his interests extend beyond frontend into backend engineering, system design, developer tooling, observability, and AI systems, because he believes understanding complete systems leads to better software.</p>
           <p>His goal isn't to become someone who knows every technology.</p>
           <p>His goal is to become someone people trust with difficult engineering problems.</p>
         </div>
         
         <div class="mt-20 mb-12 text-center max-w-2xl mx-auto">
           <p class="text-2xl md:text-3xl font-medium italic text-text-secondary leading-snug">
-            Good engineering isn't about knowing every answer — it's about being willing to stay with the problem until one emerges.
+            Good engineering isn't about knowing every answer. It is about being willing to stay with the problem until one emerges.
           </p>
         </div>
       </div>
@@ -102,7 +102,7 @@ import { RouterLink } from '@angular/router';
         
         <div class="bg-bg-card border border-border-card rounded-2xl p-8 transition-transform hover:-translate-y-1 hover:shadow-xl group">
           <h3 class="text-xl font-bold text-text-primary mb-4 group-hover:text-accent-violet-soft transition-colors">Logs are features.</h3>
-          <p class="text-text-secondary leading-relaxed">Reliable software depends on visibility. Good logging isn't only for developers — it improves debugging, support, and long-term maintainability.</p>
+          <p class="text-text-secondary leading-relaxed">Reliable software depends on visibility. Good logging isn't only for developers. It improves debugging, support, and long-term maintainability.</p>
         </div>
         
         <div class="bg-bg-card border border-border-card rounded-2xl p-8 transition-transform hover:-translate-y-1 hover:shadow-xl group">
@@ -267,7 +267,7 @@ import { RouterLink } from '@angular/router';
           <div class="absolute -left-[37px] md:-left-[53px] top-1.5 w-3 h-3 rounded-full bg-border-subtle border-4 border-bg-primary"></div>
           <div class="font-mono text-sm text-text-muted mb-2">2023</div>
           <p class="text-lg text-text-primary font-medium mb-1">Receipt Genius</p>
-          <p class="text-text-secondary">Undergraduate research project — receipt generation app for SMEs built with Flutter</p>
+          <p class="text-text-secondary">Undergraduate research project: a receipt generation app for SMEs built with Flutter</p>
         </div>
         
         <div class="relative">
@@ -420,23 +420,23 @@ import { RouterLink } from '@angular/router';
 
           <div class="space-y-8">
             <div>
-              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">01 &mdash; Got a client database out of a closed platform</h4>
+              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">01. Got a client database out of a closed platform</h4>
               <p class="text-text-secondary leading-relaxed">No database access, no export path, and the records were real. I designed a server-side extraction endpoint locked to Super Administrators and moved 45 tables in dependency order. The platform runs on that data today.</p>
             </div>
 
             <div>
-              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">02 &mdash; Threw out OCR when it turned out to be the wrong tool</h4>
+              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">02. Threw out OCR when it turned out to be the wrong tool</h4>
               <p class="text-text-secondary leading-relaxed">Traditional OCR could not read real food labels reliably. Replacing it with Gemini image understanding was the fix. Noticing I had spent a week optimising the wrong thing was the lesson.</p>
             </div>
 
             <div>
-              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">03 &mdash; Taught it to more than a hundred people</h4>
+              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">03. Taught it to more than a hundred people</h4>
               <p class="text-text-secondary leading-relaxed">A year facilitating web development at Bincom Academy, which is the fastest way I know to find out whether you actually understand something.</p>
             </div>
           </div>
 
           <div class="mt-10 pt-6 border-t border-border-subtle/50 text-sm text-text-muted space-y-1">
-            <p>Frontend Engineer (Intern) &middot; Bincom Dev Center &middot; April 2025 &ndash; June 2026</p>
+            <p>Frontend Engineer (Intern) &middot; Bincom Dev Center &middot; April 2025 to June 2026</p>
             <p>B.Sc. Computer Science &middot; University of Nigeria, Nsukka &middot; March 2024</p>
           </div>
         </div>
