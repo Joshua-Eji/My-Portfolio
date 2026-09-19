@@ -415,29 +415,29 @@ import { RouterLink } from '@angular/router';
         
         <div class="bg-bg-card border border-border-card rounded-2xl p-8 md:p-12 mb-8">
           <h3 class="text-2xl font-bold text-text-primary mb-2">Joshua Ejiobih</h3>
-          <p class="text-accent-violet-soft font-medium mb-8">Software Engineer</p>
-          
+          <p class="text-accent-violet-soft font-medium mb-3">Frontend Engineer &middot; React and TypeScript</p>
+          <p class="text-text-secondary leading-relaxed mb-10">Three things the full CV goes into properly.</p>
+
           <div class="space-y-8">
             <div>
-              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-4">Recent Role</h4>
-              <p class="text-lg text-text-primary font-medium">Software Engineer</p>
-              <p class="text-text-secondary">Bincom Dev Center (April 2025–June 2026)</p>
+              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">01 &mdash; Got a client database out of a closed platform</h4>
+              <p class="text-text-secondary leading-relaxed">No database access, no export path, and the records were real. I designed a server-side extraction endpoint locked to Super Administrators and moved 45 tables in dependency order. The platform runs on that data today.</p>
             </div>
-            
+
             <div>
-              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-4">Education</h4>
-              <p class="text-lg text-text-primary font-medium">B.Sc. Computer Science</p>
-              <p class="text-text-secondary">University of Nigeria Nsukka (2024)</p>
+              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">02 &mdash; Threw out OCR when it turned out to be the wrong tool</h4>
+              <p class="text-text-secondary leading-relaxed">Traditional OCR could not read real food labels reliably. Replacing it with Gemini image understanding was the fix. Noticing I had spent a week optimising the wrong thing was the lesson.</p>
             </div>
-            
+
             <div>
-              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-4">Key Certifications</h4>
-              <ul class="space-y-2 text-text-primary">
-                <li>• AI Fluency (Anthropic)</li>
-                <li>• Claude 101 (Anthropic)</li>
-                <li>• Introduction to Cybersecurity (Cisco)</li>
-              </ul>
+              <h4 class="text-sm font-mono text-text-muted uppercase tracking-wider mb-3">03 &mdash; Taught it to more than a hundred people</h4>
+              <p class="text-text-secondary leading-relaxed">A year facilitating web development at Bincom Academy, which is the fastest way I know to find out whether you actually understand something.</p>
             </div>
+          </div>
+
+          <div class="mt-10 pt-6 border-t border-border-subtle/50 text-sm text-text-muted space-y-1">
+            <p>Frontend Engineer (Intern) &middot; Bincom Dev Center &middot; April 2025 &ndash; June 2026</p>
+            <p>B.Sc. Computer Science &middot; University of Nigeria, Nsukka &middot; March 2024</p>
           </div>
         </div>
         
